@@ -1,5 +1,5 @@
 :root {
-  --padding: 2vw;
+  --padding: 4rem;
   --gap: 4em;
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
@@ -23,12 +23,13 @@
 
 /* light-theme colors */
 :root {
-  --bg-color: floralwhite;
+  --bg-color: aliceblue;
   --text: var(--black);
   --text-contrast: var(--white);
-  --theme: var(--white);
+  --theme: lavender;
   --medium: whitesmoke;
-  --contrast: lavender;
+  --medium-2: mistyrose;
+  --contrast: lavenderblush;
   --accent: fuchsia;
   --white: white;
   --black: rgba(46, 49, 49, 1);
@@ -39,6 +40,26 @@
 
 html {
   background-color: var(--bg-color);
+}
+
+.bg-upper {
+background-color: var(--medium-2);
+width: 33vw;
+height: 40vh;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 0 0 20em;
+}
+
+.bg-lower{
+background-color: var(--theme);
+width: 33vw;
+height: 40vh;
+position: absolute;
+bottom: 0;
+right: 0;
+border-radius: 20em 0 0 ;
 }
 
 
@@ -54,7 +75,7 @@ body {
 
 p {
   line-height: 1.5;
-  max-width: 60em;
+  max-width: 60ch;
 }
 
 small, b, strong, input {
@@ -78,7 +99,7 @@ hr {
   margin-inline-end: 1rem;
   border-radius: 50%;
   overflow: hidden;
-  border: var(--theme) 0.1rem solid;
+  border: var(--white) 0.1rem solid;
 }
 
 form .img {
@@ -99,7 +120,7 @@ form .img {
 .iphone {
   width: 14rem;
     aspect-ratio: 9/18;
-    border: 0.6rem solid var(--theme);
+    border: 0.6rem solid var(--white);
     border-radius: 3rem;
 	overflow: hidden;
   }
@@ -123,7 +144,7 @@ form .img {
   }
 
 .notch {
-  background-color: var(--theme);
+  background-color: var(--white);
     width: 6rem;
     height: 1rem;
     margin-block-start: -0.3rem;
@@ -142,7 +163,7 @@ form .img {
   }
 
   .msg-right {
-	background-color: var(--theme);
+	background-color: var(--white);
 	margin-inline-start: auto;
   }
 
@@ -186,6 +207,7 @@ input {
   width: 80vw; 
   min-width: 320px;
   padding: var(--padding) 0;
+  z-index: 1;
 }
 
 .flex {
