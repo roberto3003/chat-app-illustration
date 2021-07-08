@@ -27,9 +27,9 @@
   --text: var(--black);
   --text-contrast: var(--white);
   --theme: var(--white);
-  --medium: lavender;
+  --medium: whitesmoke;
   --contrast: lightsteelblue;
-  --accent: slateblue;
+  --accent: fuchsia;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -63,7 +63,7 @@ nav {
 
 
 hr {
-  margin-block-end: calc(var(--padding)*3);
+  margin-block-end: var(--padding);
   border:unset;
 }
 
@@ -88,6 +88,7 @@ input:not(:placeholder-shown):invalid {
   width: auto;
   border-radius: 50%;
   overflow: hidden;
+  border: var(--theme 0.2em solid);
 }
 
 .contact {
@@ -96,14 +97,25 @@ input:not(:placeholder-shown):invalid {
 }
 
 .iphone {
+  background-color: var(--medium);
     aspect-ratio: 9/16;
-    border: 2em solid white;
+    border: 2em solid var(--theme);
     border-radius: 4em;
     overflow: hidden;
   }
 
+  .iphone > * {
+	padding: calc(var(--padding)*2);
+  }
+
+  .header {
+	color: var(--text-contrast);
+	background-color: var(--accent);
+	padding-block-start: 0;
+  }
+
 .notch {
-    background-color: white;
+  background-color: var(--theme);
     width: 50%;
     height: 5em;
     margin-block-start: -2em;
