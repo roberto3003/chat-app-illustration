@@ -58,7 +58,7 @@ p {
 }
 
 small, b, strong, input {
-  font-size: 3vw;
+  font-size: 0.5rem;
   letter-spacing: initial;
 }
 
@@ -68,26 +68,17 @@ nav {
 
 
 hr {
-  margin-block-end: var(--padding);
+  margin-block-end: 0.5rem;
   border:unset;
 }
 
-input {
-  height: 7vw;
-  margin: 0;
-}
-
-input:not(:placeholder-shown):invalid {
-  border: 0.1em solid red;
-}
-
 .contact .img, .msg-main .img, form .img {
-  height: 8vw;
-  width: 8vw;
-  margin-inline-end: 5vw;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-inline-end: 1rem;
   border-radius: 50%;
   overflow: hidden;
-  border: var(--theme) 0.5vw solid;
+  border: var(--theme) 0.1rem solid;
 }
 
 form .img {
@@ -106,9 +97,10 @@ form .img {
 }
 
 .iphone {
+  width: 14rem;
     aspect-ratio: 9/18;
-    border: 2.5vw solid var(--theme);
-    border-radius: 3em;
+    border: 0.6rem solid var(--theme);
+    border-radius: 3rem;
 	overflow: hidden;
   }
 
@@ -120,29 +112,29 @@ form .img {
 
 
   .screen > * {
-	padding: 2vw;
+	padding: 0.5rem;
   }
 
   .header {
 	color: var(--text-contrast);
 	background-color: var(--accent);
 	padding-block-start: 0;
-	height: 20vw;
+	height: 2.5rem;
   }
 
 .notch {
   background-color: var(--theme);
-    width: 50%;
-    height: 5vw;
-    margin-block-start: -2vw;
-    border-radius: 4vw;
+    width: 6rem;
+    height: 1rem;
+    margin-block-start: -0.3rem;
+    border-radius: 0.5rem;
   }
 
 .msg, input {
-  margin: 5vw;
-  border-radius: var(--padding);
+  margin: 0.7rem;
+  border-radius: 0.4rem;
   max-width: 60%;
-  line-height: 3vw;
+  line-height: 0.4rem;
 }
 
   .msg-left {
@@ -157,12 +149,13 @@ form .img {
   .dogs {
 	display: flex;
 	justify-content: flex-end;
-	gap: 4vw;
+	padding: 0;
+	gap: 0.8rem;
   }
 
   .dogs img {
-	width: 12vw;
-	border-radius: 2vw;
+	width: 2rem;
+	border-radius: 0.3rem;
   }
 
   .msg-main {
@@ -170,8 +163,18 @@ form .img {
   }
    
 .msg-main .img {
-  width: 3vw;
-  height: 3vw;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+form {
+  margin-block-start: -0.5rem;
+  padding: 0;
+}
+
+input {
+  height: 1rem;
+  margin: 0 0.5rem 0 0;
 }
 
 
