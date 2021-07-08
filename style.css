@@ -1,5 +1,5 @@
 :root {
-  --padding: 1em;
+  --padding: 2vw;
   --gap: 4em;
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
@@ -57,6 +57,11 @@ p {
   max-width: 60em;
 }
 
+small, b, strong {
+  font-size: 2vw;
+  letter-spacing: initial;
+}
+
 nav {
   justify-content: flex-end;
 }
@@ -76,35 +81,41 @@ input:not(:placeholder-shown):invalid {
   border: 0.1em solid red;
 }
 
-.contact .img {
-  height: 3em;
-  width: 3em;
-  margin-inline-end: 1em;
+.contact .img, .msg-main .img {
+  height: 5vw;
+  width: 5vw;
+  margin-inline-end: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: var(--theme) 0.5vw solid;
 }
 
-.contact .img img {
+.contact .img img, .msg-main .img  img {
   min-width: initial;
   height: 100%;
   width: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  border: var(--theme 0.2em solid);
 }
 
-.contact {
+.contact, .msg-main {
   display:flex;
   align-items: center;
 }
 
 .iphone {
-  background-color: var(--medium);
     aspect-ratio: 9/16;
     border: 2.5vw solid var(--theme);
     border-radius: 4em;
-    overflow: scroll;
+	overflow: hidden;
   }
 
-  .iphone > * {
+.screen {
+  background-color: var(--medium);
+  min-height: 100%;
+    overflow: hidden;
+  }
+
+
+  .screen > * {
 	padding: calc(var(--padding)*2);
   }
 
@@ -133,6 +144,10 @@ input:not(:placeholder-shown):invalid {
 
   .msg-right {
 	background-color: var(--theme);
+  }
+
+  .msg-main {
+	background-color: var(--accent);
   }
 
 .hero {
