@@ -74,7 +74,7 @@ hr {
 
 input {
   height: 7vw;
-  margin-block-start: 0;
+  margin: 0;
 }
 
 input:not(:placeholder-shown):invalid {
@@ -82,8 +82,8 @@ input:not(:placeholder-shown):invalid {
 }
 
 .contact .img, .msg-main .img, form .img {
-  height: 5vw;
-  width: 5vw;
+  height: 8vw;
+  width: 8vw;
   margin-inline-end: 5vw;
   border-radius: 50%;
   overflow: hidden;
@@ -127,6 +127,7 @@ form .img {
 	color: var(--text-contrast);
 	background-color: var(--accent);
 	padding-block-start: 0;
+	height: 20vw;
   }
 
 .notch {
