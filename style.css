@@ -28,7 +28,7 @@
   --text-contrast: var(--white);
   --theme: var(--white);
   --medium: whitesmoke;
-  --contrast: lightsteelblue;
+  --contrast: lavender;
   --accent: fuchsia;
   --white: white;
   --black: rgba(46, 49, 49, 1);
@@ -99,9 +99,9 @@ input:not(:placeholder-shown):invalid {
 .iphone {
   background-color: var(--medium);
     aspect-ratio: 9/16;
-    border: 2em solid var(--theme);
+    border: 2.5vw solid var(--theme);
     border-radius: 4em;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   .iphone > * {
@@ -117,9 +117,22 @@ input:not(:placeholder-shown):invalid {
 .notch {
   background-color: var(--theme);
     width: 50%;
-    height: 5em;
-    margin-block-start: -2em;
-    border-radius: 4em;
+    height: 5vw;
+    margin-block-start: -2vw;
+    border-radius: 4vw;
+  }
+
+.msg {
+  margin: var(--padding);
+  border-radius: var(--padding);
+}
+
+  .msg-left {
+	background-color: var(--contrast);
+  }
+
+  .msg-right {
+	background-color: var(--theme);
   }
 
 .hero {
